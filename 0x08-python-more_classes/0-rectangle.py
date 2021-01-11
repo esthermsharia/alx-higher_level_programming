@@ -4,7 +4,5 @@
 
 
 class Rectangle:
-    """an empty python class
-    does nothing.
-    """
+    """an empty python class"""
     pass
