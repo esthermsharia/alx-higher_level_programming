@@ -13,7 +13,7 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
+    def to_json(self, attrs=None):
         """Return  dictionary representation of a Student.
         If attrs is a list of strings, represents only those attributes
         included in the list.
