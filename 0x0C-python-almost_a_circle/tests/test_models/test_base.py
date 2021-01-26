@@ -10,6 +10,7 @@ import inspect
 from models import base
 Base = base.Base
 
+
 class TestBaseDocs(unittest.TestCase):
     """Contains tests for documentation and style of the Base class"""
     @classmethod
