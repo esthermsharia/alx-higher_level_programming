@@ -90,3 +90,30 @@ class Rectangle(Base):
                                                                  self.__y,
                                                                  self.__width,
                                                                  self.__height)
+
+
+    def update(self, *args, **kwargs):
+        """updates multiple attributes"""
+        if args is not None
+            for i, j in enumerate(args):
+                if i == 0:
+                    self.id = j
+                elif i == 1:
+                    self.width = a
+                elif i == 2:
+                    self.height = a
+                elif i == 3:
+                    self.x = j
+                elif i == 4:
+                    self.y = j
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "height" in kwargs:
+                self.height = kwargs["height"]
+            if "width" in kwargs:
+                self.width = kwargs["width"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
