@@ -3,6 +3,8 @@
 This module defines the Base class
 """
 
+import json
+
 
 class Base:
     """The base class, acts as the reference for all the other classes"""
@@ -20,5 +22,5 @@ class Base:
     def to_json_string(list_dictionaries):
         """return JSON string representation of a list of dictionaries"""
         if list_dictionaries is None:
-            l_dictionaries = []
-        return json.dumps(l_dictionaries)
+            list_dictionaries = []
+        return json.dumps(list_dictionaries)
