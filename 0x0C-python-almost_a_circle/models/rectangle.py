@@ -94,14 +94,14 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """updates multiple attributes"""
-        if args is not None
+        if args is not None:
             for i, j in enumerate(args):
                 if i == 0:
                     self.id = j
                 elif i == 1:
-                    self.width = a
+                    self.width = j
                 elif i == 2:
-                    self.height = a
+                    self.height = j
                 elif i == 3:
                     self.x = j
                 elif i == 4:
