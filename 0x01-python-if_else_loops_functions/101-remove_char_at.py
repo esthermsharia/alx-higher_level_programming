@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Creates a copy of str and removes the character at n.
+# Creates a copy of str and removes the character at n.
 
 
 def remove_char_at(str, n):
