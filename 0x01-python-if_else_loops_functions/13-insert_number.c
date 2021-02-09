@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * insert_node - Inserts a node in a sorted linked list
  * @head: Pointer to a pointer pointing to the head node in a linked list
@@ -9,39 +9,27 @@
  */
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t **temp = head;
-	listint_t *new_node = malloc(sizeof(listint_t));
-	listint_t *node2;
+	listint_t *node = *head, *new_node;
 
-	new_node->n = number;
+	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 		return (NULL);
+	new_node->n = number;
 
-
-
-	if (*head == NULL)
+	if (node == NULL || node->n >= number)
 	{
-		new_node->next = NULL;
-		*head = new_node;
-		return (new_node);
-	}
-	if ((*temp)->n >= number)
-	{
-		new_node->next = (*temp);
+		new_node->next = node;
 		*head = new_node;
 		return (new_node);
 	}
 
-	while ((*temp) != NULL)
+	while (node && node->next && node->next->n < number)
 	{
-		if (number >= (*temp)->n && number <= (*temp)->next->n)
-		{
-			node2 = (*temp)->next;
-			(*temp)->next = new_node;
-			new_node->next = node2;
-			break;
-		}
-		(*temp) = (*temp)->next;
+		node = node->next;
 	}
-	return (0);
+
+	new_node->next = node->next;
+	node->next = new_node;
+
+	return (new_node);
 }
