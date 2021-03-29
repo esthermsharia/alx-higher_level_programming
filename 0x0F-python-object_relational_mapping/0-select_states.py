@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-# Lists all states from the database hbtn_0e_0_usa
-# Results are sorted in ascending order by states id.
-
+"""
+Lists all states from the database hbtn_0e_0_usa
+Results are sorted in ascending order by states id.
+"""
 
 import sys
 import MySQLdb
