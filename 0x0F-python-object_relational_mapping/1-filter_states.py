@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-# Lists all scripts with a name starting with "N".
-
+"""
+Lists all scripts with a name starting with "N".
+Usage mysql <username> <passwd> <db name>
+"""
 import MySQLdb
 import sys
 
