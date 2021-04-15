@@ -5,7 +5,7 @@ response(decoded in utf-8)
 """
 import sys
 import urllib.request
-import urrlib.error
+import urllib.error
 
 if __name__ == "__main__":
     url = sys.argv[1]
