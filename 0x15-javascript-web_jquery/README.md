@@ -1,1 +1,1 @@
-0x15. Javascript - Web JQuery
+0x15. Javascript - web JQuery
